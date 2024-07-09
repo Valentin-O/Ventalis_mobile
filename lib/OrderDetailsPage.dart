@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'myAppBar.dart';
 class OrderDetailsPage extends StatelessWidget {
   final Map<String, dynamic> order;
-  final double totalPrice;
+  final int totalPrice;
 
   const OrderDetailsPage({Key? key, required this.order, required this.totalPrice}) : super(key: key);
 
@@ -76,7 +76,7 @@ class OrderDetailsPage extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Image.network(
-                              'https://127.0.0.1:8000' + detail['produit']['images'][0],
+                              'https://venta.osterweb.fr/' + detail['produit']['images'][0],
                               width: 60,
                               height: 60,
                               fit: BoxFit.cover,
