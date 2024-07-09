@@ -21,7 +21,7 @@ class _ContactFormState extends State<ContactForm> {
     final String token = prefs.getString('token') ?? '';
     if (_formKey.currentState!.validate()) {
       final response = await http.post(
-        Uri.parse('https://127.0.0.1:8000/api/contact'),
+        Uri.parse('https://www.venta.osterweb.fr/api/contact'),
         headers: {
           'authorisation': 'bearer $token',
           'Content-Type': 'application/json; charset=UTF-8',

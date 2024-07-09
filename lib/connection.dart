@@ -17,7 +17,7 @@ class _ConectionViewState extends State<ConectionView> {
   final TextEditingController passwordController = TextEditingController();
 
   Future<void> _login() async {
-    final String apiUrl = 'http://127.0.0.1:8000/api/login_check';
+    final String apiUrl = 'https://www.venta.osterweb.fr/api/login_check';
 
     final Map<String, dynamic> data = {
       'username': usernameController.text,

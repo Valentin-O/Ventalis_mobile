@@ -25,7 +25,7 @@ class _OrderListPageState extends State<OrderListPage> {
     final SharedPreferences prefs = await SharedPreferences.getInstance();
     final String token = prefs.getString('token') ?? '';
 
-    final String ordersUrl = 'http://127.0.0.1:8000/api/order_check';
+    final String ordersUrl = 'https://www.venta.osterweb.fr/api/order_check';
     print(token);
     try {
       final http.Response ordersResponse = await http.get(
